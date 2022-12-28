@@ -1,0 +1,15 @@
+#!/bin/bash
+microstack.openstack network create  demo-network 
+--share \
+# Share the network between projects
+
+--external \
+--provider-physical-network provider \
+--provider-network-type flat provider \
+
+microstack.openstack subnet create test-subnet \
+--network demo-network \
+--subnet-range 192.0.2.0/24 \
+
+microstack.openstack network show demo-network
+microstack.openstack network list

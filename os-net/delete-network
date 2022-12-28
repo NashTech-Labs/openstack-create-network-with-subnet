@@ -1,0 +1,3 @@
+#!/bin/bash
+microstack.openstack network delete <net-name or net-id>
+microstack.openstack network delete demo-network
