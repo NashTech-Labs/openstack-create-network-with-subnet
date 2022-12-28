@@ -16,7 +16,7 @@ Run:
 * ./demo-network
 
 # delete network:
-microstack.openstack network delete <net-id or name>
+microstack.openstack network delete net-id or name
 
 # Network list:
 microstack.openstack network list
